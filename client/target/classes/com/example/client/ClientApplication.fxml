@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.ClientAppController">
+   <children>
+      <BorderPane layoutX="100.0" layoutY="77.0" prefHeight="796.0" prefWidth="1039.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="796.0" prefWidth="1039.0" style="-fx-background-color: FE8B9D;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="136.0" prefWidth="622.0" styleClass="gradient-button" stylesheets="@../../../value/style.css">
+                     <children>
+                        <ImageView fitHeight="121.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/MIe-under-the-tree.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="136.0" prefWidth="248.0" text="Ramen" textFill="#7a1c1f">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Cambria Bold" size="75.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="136.0" layoutY="10.0" prefHeight="136.0" prefWidth="176.0" text="Tree" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="75.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="cartclick2" accessibleRole="BUTTON" alignment="CENTER" layoutX="858.0" layoutY="69.0" prefHeight="136.0" prefWidth="61.0" style="-fx-background-color: 868686;" styleClass="mfx-button" stylesheets="@../../../value/style.css" text="Label" textAlignment="CENTER">
+                           <HBox.margin>
+                              <Insets left="300.0" />
+                           </HBox.margin>
+                        </Label>
+                        <MFXButton buttonType="RAISED" depthLevel="LEVEL0" prefHeight="187.0" prefWidth="140.0" rippleAnimateShadow="true" rippleAnimationSpeed="5.0" rippleBackgroundOpacity="0.6" rippleColor="#ff6bc4" style="-fx-background-color: 868686;" styleClass="mfx-button" stylesheets="@../../../value/style.css" text="CART" viewOrder="1.0">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </MFXButton>
+                        <Label fx:id="cartclick21" alignment="CENTER_RIGHT" layoutX="858.0" layoutY="69.0" prefHeight="12.0" prefWidth="53.0" text="Label" textAlignment="CENTER" />
+                     </children></HBox>
+                  <HBox prefHeight="670.0" prefWidth="1040.0" style="-fx-background-color: FECFD7;">
+                     <children>
+                        <ScrollPane prefHeight="654.0" prefWidth="772.0" style="-fx-background-color: FF0B2F;" styleClass="transparent" stylesheets="@../../../value/style.css">
+                           <HBox.margin>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </HBox.margin>
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="208.0" prefWidth="0.0" style="-fx-background-color: E7E8E2;" styleClass="transparent" stylesheets="@../../../value/style.css">
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                        <VBox fx:id="chosen" alignment="TOP_CENTER" prefHeight="601.0" prefWidth="361.0" style="-fx-background-color: F2C5CD; -fx-background-radius: 50;">
+                           <children>
+                              <HBox prefHeight="62.0" prefWidth="361.0" style="-fx-background-color: F2C5CD; -fx-background-radius: 50;">
+                                 <children>
+                                    <Label fx:id="gNameLable" prefHeight="62.0" prefWidth="212.0" style="-fx-background-radius: 30;" text="Harga">
+                                       <font>
+                                          <Font size="38.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="gPriceLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="62.0" prefWidth="160.0" text="RP.10000">
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="60.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Pane prefHeight="39.0" prefWidth="361.0" />
+                              <ImageView fx:id="gImg" fitHeight="226.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/Sparkling-Lime.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Pane prefHeight="37.0" prefWidth="361.0" />
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: F2C5CD;">
+                                 <children>
+                                    <MFXButton layoutX="219.0" layoutY="39.0" minWidth="50.0" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: WHITE;" styleClass="mfx-button8" stylesheets="@../../../value/style.css" text="-">
+                                       <font>
+                                          <Font name="Symbol" size="20.0" />
+                                       </font>
+                                    </MFXButton>
+                                    <Label alignment="CENTER" prefHeight="61.0" prefWidth="54.0" style="-fx-background-color: F2C5CD;" text="-" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="29.0" />
+                                       </font>
+                                    </Label>
+                                    <MFXButton minWidth="50.0" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: WHITE;" styleClass="mfx-button8" stylesheets="@../../../value/style.css" text="+">
+                                       <font>
+                                          <Font name="Symbol" size="20.0" />
+                                       </font>
+                                    </MFXButton>
+                                 </children>
+                              </HBox>
+                              <MFXButton depthLevel="LEVEL5" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: WHITE; -fx-background-radius: 30;" styleClass="mfx-button8" stylesheets="@../../../value/style.css" text="Order">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </MFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+      <AnchorPane fx:id="opacityPane" layoutX="602.0" layoutY="136.0" prefHeight="660.0" prefWidth="440.0" style="-fx-background-color: white;">
+         <children>
+            <VBox prefHeight="660.0" prefWidth="440.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="440.0">
+                     <children>
+                        <ImageView fitHeight="74.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+.gradient-button {
+  -fx-background-color: linear-gradient(to bottom, #F28496, #E7E8E2);
+
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.button:hover {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: white;
+    -fx-animation-fill-mode: forwards;
+    -fx-animation-duration: 0.5s;
+}
+.my-button:hover {
+    -fx-background-color: #f0a6f6; /* Change background color on hover */
+    -fx-text-fill: white; /* Change text color on hover */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+.mfx-button {
+    /* style for default button */
+}
+
+@media (max-width: 600px) {
+    .mfx-button {
+        /* new style for button when screen width is less than 600px */
+        -fx-pref-width: 200px;
+        -fx-font-size: 12pt;
+    }
+}
+.mfx-button {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0, 1, 2, 3;
+    -fx-background-radius: 3, 2, 2, 2;
+    -fx-padding: 0.333333em; /* 4 */
+    -fx-font-family: "Arial";
+    -fx-font-size: 0.8em; /* 12 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: center;
+}
+
+.mfx-button:hover {
+    -fx-effect: dropshadow(gaussian, red, 10, 0.5, 0, 0);
+}
+
+.mfx-button:pressed {
+    -fx-effect: dropshadow(gaussian, red, 10, 0.5, 0, 0);
+}
+
+.mfx-button3 {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-transition: all 0.3s ease-out;
+}
+.mfx-button3:hover {
+    -fx-background-color: #f0a6f6;
+    -fx-text-fill: #7a1c1f;
+}
+
+.mfx-button8:hover{
+    -fx-background-color: #ff0000;
+    -fx-transition: all 0.5s ease-in-out;
+    -fx-transform: scale(1.2);
+}
+

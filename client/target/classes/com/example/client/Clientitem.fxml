@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="243.0" prefWidth="223.0" style="-fx-background-color: E68495; -fx-background-radius: 30;" styleClass="menu-item" stylesheets="@../../../value/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.ClientAppitemController">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="8.0" prefHeight="252.0" prefWidth="230.0" style="-fx-background-color: E68495; -fx-background-radius: 30;" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="23.0" prefWidth="203.0">
+               <children>
+                  <Label fx:id="nameLabel" prefHeight="23.0" prefWidth="185.0" styleClass="text" stylesheets="@../../../value/style.css" text="makanan">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PRICELabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="38.0" prefWidth="96.0" styleClass="text" stylesheets="@../../../value/style.css" text="Rp.10.000" textAlignment="RIGHT">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="imgmenu" fitHeight="141.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Oyakodon-0640.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <MFXButton depthLevel="LEVEL3" onMousePressed="#CLICK" prefHeight="27.0" prefWidth="93.0" rippleAnimateShadow="true" rippleAnimationSpeed="5.0" rippleBackgroundOpacity="0.6" rippleColor="#ff3a33" style="-fx-background-color: #be1515;" styleClass="mfx-button8" stylesheets="@../../../value/style.css" text="Buy">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </MFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

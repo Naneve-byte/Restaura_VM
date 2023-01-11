@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="876.0" minWidth="894.0" prefHeight="876.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.server.ServerController">
+   <children>
+      <BorderPane layoutX="367.0" layoutY="234.0" prefHeight="891.0" prefWidth="969.0" AnchorPane.bottomAnchor="-15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="882.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="784.0">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../image/a.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></HBox>
+         </top>
+         <center>
+            <HBox prefHeight="761.0" prefWidth="894.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView prefHeight="776.0" prefWidth="733.0">
+                    <columns>
+                      <TableColumn fx:id="noMeja" prefWidth="92.0" text="No. Meja" />
+                      <TableColumn fx:id="pesanan" prefWidth="288.0" text="Pesanan" />
+                        <TableColumn fx:id="ttlHarga" prefWidth="141.0" text="Total harga" />
+                        <TableColumn prefWidth="128.0" text="Waktu" />
+                        <TableColumn fx:id="pembayaram" prefWidth="83.0" text="Pembayaran" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets left="50.0" top="5.0" />
+                     </HBox.margin>
+                  </TableView>
+                  <JFXButton prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: FFC000;">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

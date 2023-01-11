@@ -1,0 +1,28 @@
+.pt1 {
+    background-size: 50px 50px;
+    background-color: #0ae;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+}
+.button1{
+-fx-background-color:#B11219;
+-fx-text-fill :#ffffff
+}
+
+.button1:hover{
+-fx-background-color:#6F4CBB;
+}
+
+.button1:pressed{
+-fx-background-color:#371897;
+}
+
+.button1:active{
+-fx-background-color:#80AFF5;
+}
+.dwadwaljn{
+-fx-background-color: linear-gradient(to botom left,#f78361,#f54b64};
+}
