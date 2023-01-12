@@ -64,107 +64,91 @@ public class ClientAppController<MFXButton> implements Initializable {
 
         menu = new Menu();
         menu.setName("Ramen Shio");
-        menu.setPrice(3.99);
+        menu.setPrice(40.0000);
         menu.setImg("/images/Shio-Ramen-9487-II.jpg");
         menus.add(menu);
 
         menu = new Menu();
         menu.setName("Ramen Spicy Tantan");
-        menu.setPrice(3.99);
+        menu.setPrice(40.0000);
         menu.setImg("/images/tan-tan-noodles-17-scaled.jpg");
         menus.add(menu);
 
         menu = new Menu();
-        menu.setName("adw");
+        menu.setName("Ramen Special Bowl");
+        menu.setPrice(48.0000);
+        menu.setImg("/images/special-bowl.jpgw");
+        menus.add(menu);
+
+        menu = new Menu();
+        menu.setName("Bakmie Special Pedas Komplit");
+        menu.setPrice(50.0000);
+        menu.setImg("/images/bakmie-pedas.jpg");
+        menus.add(menu);
+
+
+        menu = new Menu();
+        menu.setName("Bakmie Special Asin Komplit");
         menu.setPrice(3.99);
+        menu.setImg("/images/bakmiespecial-asinkomplet.jpg");
+        menus.add(menu);
+
+        menu = new Menu();
+        menu.setName("Oyako Don");
+        menu.setPrice(38.0000);
+        menu.setImg("/images/Oyakodon-0640.jpg");
+        menus.add(menu);
+
+        menu = new Menu();
+        menu.setName("Teriyaki Don");
+        menu.setPrice(38.0000);
+        menu.setImg("/images/terayakidon.jpeg");
+        menus.add(menu);
+
+        menu = new Menu();
+        menu.setName("Dakgabli + nasi");
+        menu.setPrice(38.0000);
+        menu.setImg("/images/dakgalbi+rice.jpg");
+        menus.add(menu);
+
+        menu = new Menu();
+        menu.setName("Buldak + Nasi");
+        menu.setPrice(38.0000);
+        menu.setImg("/images/grilled-teriyaki-chicken-rice-teriyaki-don-japanese-oriental-cuisine-juicy-chicken-teriyaki-sauce-top-view-166116-4494.jpg");
+        menus.add(menu);
+
+
+
+        menu = new Menu();
+        menu.setName("Ayam Panggang 1 porsi");
+        menu.setPrice(30.0000);
+        menu.setImg("/images/Ayam-panggang-1-porsi.jpg");
+        menus.add(menu);
+
+        menu = new Menu();
+        menu.setName("Sparkling Lime");
+        menu.setPrice(20.0000);
+        menu.setImg("/images/Sparkling-Lime.jpg");
+        menus.add(menu);
+
+        menu = new Menu();
+        menu.setName("Teh botol Sosro");
+        menu.setPrice(10.0000);
         menu.setImg("/images/Teh_Botol_Sosro.jpg");
         menus.add(menu);
 
 
         menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
+        menu.setName("Air mineral");
+        menu.setPrice(8.0000);
         menu.setImg("/images/lemineral.jpg");
         menus.add(menu);
 
         menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Teh_Botol_Sosro.jpg");
+        menu.setName("Extra Sambal Special");
+        menu.setPrice(7.0000);
+        menu.setImg("/images/samabal.jpg");
         menus.add(menu);
-
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Teh_Botol_Sosro.jpg");
-        menus.add(menu);
-
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/lemineral.jpg");
-        menus.add(menu);
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Teh_Botol_Sosro.jpg");
-        menus.add(menu);
-
-        menu = new Menu();
-        menu.setName("Ramen Shio");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Shio-Ramen-9487-II.jpg");
-        menus.add(menu);
-
-        menu = new Menu();
-        menu.setName("Ramen Spicy Tantan");
-        menu.setPrice(3.99);
-        menu.setImg("/images/tan-tan-noodles-17-scaled.jpg");
-        menus.add(menu);
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Teh_Botol_Sosro.jpg");
-        menus.add(menu);
-
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/lemineral.jpg");
-        menus.add(menu);
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Teh_Botol_Sosro.jpg");
-        menus.add(menu);
-
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Teh_Botol_Sosro.jpg");
-        menus.add(menu);
-
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/lemineral.jpg");
-        menus.add(menu);
-
-        menu = new Menu();
-        menu.setName("adw");
-        menu.setPrice(3.99);
-        menu.setImg("/images/Teh_Botol_Sosro.jpg");
-        menus.add(menu);
-
-
 
 
 
