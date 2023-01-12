@@ -89,6 +89,7 @@
     </orderEntry>
     <orderEntry type="library" exported="" name="java-sdk-19" level="application" />
     <orderEntry type="library" name="java-sdk-11" level="application" />
+    <orderEntry type="library" exported="" name="java" level="application" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:11.0.2" level="project" />
@@ -105,6 +106,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.7.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
-    <orderEntry type="library" exported="" name="java" level="application" />
   </component>
 </module>

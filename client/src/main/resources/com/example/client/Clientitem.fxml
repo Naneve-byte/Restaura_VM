@@ -33,7 +33,7 @@
             </HBox>
             <ImageView fx:id="imgmenu" fitHeight="141.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../images/Oyakodon-0640.jpg" />
+                  <Image url="@../../../images/Oyako-Don.jpg" />
                </image>
                <VBox.margin>
                   <Insets bottom="10.0" top="5.0" />

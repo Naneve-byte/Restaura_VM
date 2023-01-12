@@ -13,7 +13,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://K:/Compressed/javafx-sdk-11.0.2/mysql-connector-j-8.0.31.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../Compressed/javafx-sdk-11.0.2/mysql-connector-j-8.0.31.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -22,14 +22,14 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://K:/Compressed/javafx-sdk-11.0.2/lib" />
+          <root url="file://$MODULE_DIR$/../../../Compressed/javafx-sdk-11.0.2/lib" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://K:/Compressed/javafx-sdk-11.0.2/lib" />
+          <root url="file://$MODULE_DIR$/../../../Compressed/javafx-sdk-11.0.2/lib" />
         </SOURCES>
-        <jarDirectory url="file://K:/Compressed/javafx-sdk-11.0.2/lib" recursive="false" />
-        <jarDirectory url="file://K:/Compressed/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../Compressed/javafx-sdk-11.0.2/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../../Compressed/javafx-sdk-11.0.2/lib" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
@@ -52,6 +52,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="java-sdk-19" level="application" />
+    <orderEntry type="library" exported="" name="java" level="application" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:11.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:11.0.2" level="project" />
@@ -74,6 +75,5 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="module" module-name="Login" />
-    <orderEntry type="library" exported="" name="java" level="application" />
   </component>
 </module>

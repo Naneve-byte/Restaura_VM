@@ -59,6 +59,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" exported="" name="java-sdk-19" level="application" />
+    <orderEntry type="library" exported="" name="java" level="application" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:19" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:19" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:19" level="project" />
@@ -86,6 +87,5 @@
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-whhg-pack:12.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-zondicons-pack:12.3.1" level="project" />
     <orderEntry type="library" name="Maven: de.jensd:fontawesomefx:8.9" level="project" />
-    <orderEntry type="library" exported="" name="java" level="application" />
   </component>
 </module>

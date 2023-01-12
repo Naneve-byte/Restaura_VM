@@ -1,7 +1,6 @@
 package com.example.client;
 
 import com.example.model.Menu;
-import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,7 +10,6 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
@@ -65,44 +63,44 @@ public class ClientAppController<MFXButton> implements Initializable {
         menu = new Menu();
         menu.setName("Ramen Shio");
         menu.setPrice(40.0000);
-        menu.setImg("/images/Shio-Ramen-9487-II.jpg");
+        menu.setImg("/images/ramen-shio.JPG");
         menus.add(menu);
 
         menu = new Menu();
         menu.setName("Ramen Spicy Tantan");
         menu.setPrice(40.0000);
-        menu.setImg("/images/tan-tan-noodles-17-scaled.jpg");
+        menu.setImg("/images/Ramen-tan-tan.jpg");
         menus.add(menu);
 
         menu = new Menu();
         menu.setName("Ramen Special Bowl");
         menu.setPrice(48.0000);
-        menu.setImg("/images/special-bowl.jpgw");
+        menu.setImg("/images/Ramen-Special-Bowl.jpg");
         menus.add(menu);
 
         menu = new Menu();
         menu.setName("Bakmie Special Pedas Komplit");
         menu.setPrice(50.0000);
-        menu.setImg("/images/bakmie-pedas.jpg");
+        menu.setImg("/images/Bakmie-Special-Pedas-Komplit.jpg");
         menus.add(menu);
 
 
         menu = new Menu();
         menu.setName("Bakmie Special Asin Komplit");
         menu.setPrice(3.99);
-        menu.setImg("/images/bakmiespecial-asinkomplet.jpg");
+        menu.setImg("/images/Bakmie-Special-Asin-Komplit.jpg");
         menus.add(menu);
 
         menu = new Menu();
         menu.setName("Oyako Don");
         menu.setPrice(38.0000);
-        menu.setImg("/images/Oyakodon-0640.jpg");
+        menu.setImg("/images/Oyako-Don.jpg");
         menus.add(menu);
 
         menu = new Menu();
         menu.setName("Teriyaki Don");
         menu.setPrice(38.0000);
-        menu.setImg("/images/terayakidon.jpeg");
+        menu.setImg("/images/Teriyaki-Don.jpeg");
         menus.add(menu);
 
         menu = new Menu();
@@ -114,7 +112,7 @@ public class ClientAppController<MFXButton> implements Initializable {
         menu = new Menu();
         menu.setName("Buldak + Nasi");
         menu.setPrice(38.0000);
-        menu.setImg("/images/grilled-teriyaki-chicken-rice-teriyaki-don-japanese-oriental-cuisine-juicy-chicken-teriyaki-sauce-top-view-166116-4494.jpg");
+        menu.setImg("/images/Buldak+Nasi.jpg");
         menus.add(menu);
 
 
@@ -213,7 +211,7 @@ public class ClientAppController<MFXButton> implements Initializable {
             };
 
         }
-        int column = 3;
+        int column = 0;
         int row = 1;
 
         try {
