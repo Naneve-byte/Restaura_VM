@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class cartpem {
 
-    private Map<String, CartEntry> entries;
+  /*  private Map<String, CartEntry> entries;
     public  cartpem() {
         this.entries = new HashMap<>();
     }
@@ -24,5 +24,5 @@ public class cartpem {
     public double calculateTotal(){
         float total = 0;
         for(Car)
-    }
+    }*/
 }

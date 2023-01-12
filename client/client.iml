@@ -87,5 +87,6 @@
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-whhg-pack:12.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-zondicons-pack:12.3.1" level="project" />
     <orderEntry type="library" name="Maven: de.jensd:fontawesomefx:8.9" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-j-8.0.311" level="application" />
   </component>
 </module>
