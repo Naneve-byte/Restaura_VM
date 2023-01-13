@@ -62,7 +62,7 @@ public class ClientAppController<MFXButton> implements Initializable {
 
         menu = new Menu();
         menu.setName("Ramen Shio");
-        menu.setPrice(40.0000);
+        menu.setPrice(40.000);
         menu.setImg("/images/ramen-shio.JPG");
         menus.add(menu);
 
@@ -87,7 +87,7 @@ public class ClientAppController<MFXButton> implements Initializable {
 
         menu = new Menu();
         menu.setName("Bakmie Special Asin Komplit");
-        menu.setPrice(3.99);
+        menu.setPrice(45.000);
         menu.setImg("/images/Bakmie-Special-Asin-Komplit.jpg");
         menus.add(menu);
 
@@ -159,7 +159,9 @@ public class ClientAppController<MFXButton> implements Initializable {
         gPriceLabel.setText(main.CURRENCY + menu.getPrice());
         image = new Image(getClass().getResourceAsStream(menu.getImg()));
         gImg.setImage(image);
-
+        gImg.setFitWidth(200);
+        gImg.setFitHeight(200);
+        gImg.setPreserveRatio(true);
     }
 
 

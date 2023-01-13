@@ -14,9 +14,9 @@
    <children>
       <VBox alignment="CENTER" layoutX="10.0" layoutY="8.0" prefHeight="252.0" prefWidth="230.0" style="-fx-background-color: E68495; -fx-background-radius: 30;" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="4.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="23.0" prefWidth="203.0">
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="203.0">
                <children>
-                  <Label fx:id="nameLabel" prefHeight="23.0" prefWidth="185.0" styleClass="text" stylesheets="@../../../value/style.css" text="makanan">
+                  <Label fx:id="nameLabel" lineSpacing="2.0" prefHeight="43.0" prefWidth="161.0" styleClass="text" stylesheets="@../../../value/style.css" text="makanan">
                      <HBox.margin>
                         <Insets left="5.0" />
                      </HBox.margin>
@@ -24,14 +24,15 @@
                         <Font name="Bell MT Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label fx:id="PRICELabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="38.0" prefWidth="96.0" styleClass="text" stylesheets="@../../../value/style.css" text="Rp.10.000" textAlignment="RIGHT">
+                  <Label fx:id="PRICELabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="153.0" styleClass="text" stylesheets="@../../../value/style.css" text="10.000" textAlignment="CENTER">
                      <font>
                         <Font size="10.0" />
                      </font>
                   </Label>
                </children>
             </HBox>
-            <ImageView fx:id="imgmenu" fitHeight="141.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+            <AnchorPane prefHeight="30.0" prefWidth="203.0" />
+            <ImageView fx:id="imgmenu" fitHeight="141.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../images/Oyako-Don.jpg" />
                </image>

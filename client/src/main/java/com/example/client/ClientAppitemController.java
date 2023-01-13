@@ -7,6 +7,11 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Currency;
+import java.util.Formatter;
+
 
 public class ClientAppitemController  {
 
@@ -30,10 +35,15 @@ public class ClientAppitemController  {
         this.menu = menu;
         this.myListener =myListener;
         nameLabel.setText(menu.getName());
-        PRICELabel.setText(main.CURRENCY + menu.getPrice());
+
+        DecimalFormat formatter = new DecimalFormat("#,###.000 ");
+
+
+        PRICELabel.setText(main.CURRENCY + formatter.format(menu.getPrice()));
         String imageFile = "images/Shio-Ramen-9487-II.jpg";
         //Image image = new Image(getClass().getResourceAsStream(menu.getImg()));
         Image image = new Image(getClass().getResourceAsStream(menu.getImg()));
+
 
         imgmenu.setImage(image);
 

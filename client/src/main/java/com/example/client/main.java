@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class main extends Application {
     private static Stage stg;
-    public static final String CURRENCY = "$";
+    public static final String CURRENCY = "Rp.";
 
 
     @Override

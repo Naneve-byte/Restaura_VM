@@ -19,7 +19,7 @@ import java.util.HashSet;
 public class MainApp extends Application {
     private static Stage stg;
     /* Setting up variables */
-    private static final int PORT = 9003;
+    private static final int PORT = 9001;
     /* private static final HashMap<String, User> names = new HashMap<>();*/
     private static HashSet<ObjectOutputStream> writers = new HashSet<>();
     /*private static ArrayList<User> users = new ArrayList<>();*/

@@ -2,6 +2,7 @@
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -31,7 +32,7 @@
                               <Insets bottom="20.0" left="10.0" top="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Label prefHeight="136.0" prefWidth="248.0" text="Ramen" textFill="#7a1c1f">
+                        <Label prefHeight="136.0" prefWidth="267.0" text="Ramen" textFill="#7a1c1f">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
@@ -133,8 +134,16 @@
       </BorderPane>
       <AnchorPane fx:id="opacityPane" layoutX="602.0" layoutY="136.0" prefHeight="660.0" prefWidth="440.0" style="-fx-background-color: white;">
          <children>
-            <VBox prefHeight="660.0" prefWidth="440.0">
+            <VBox alignment="TOP_CENTER" prefHeight="660.0" prefWidth="440.0" style="-fx-background-color: #fce6f5;">
                <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="59.0" prefWidth="396.0" text="Cart">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Roboto Black" size="42.0" />
+                     </font>
+                  </Label>
                   <HBox alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="440.0">
                      <children>
                         <ImageView fitHeight="74.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
@@ -142,7 +151,44 @@
                               <Insets left="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Label text="Label" />
+                        <Label prefHeight="30.0" prefWidth="145.0" text="Label">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin></Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="111.0" prefWidth="440.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="56.0" prefWidth="97.0" text="Total :">
+                           <font>
+                              <Font name="Open Sans Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="25.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="10.0" prefHeight="55.0" prefWidth="151.0" text="Rp.10.000">
+                           <font>
+                              <Font name="Open Sans Regular" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="25.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="108.0" style="-fx-background-radius: 50;" styleClass="mfx-button" stylesheets="@../../../value/style.css" text="Order">
+                           <HBox.margin>
+                              <Insets left="35.0" top="25.0" />
+                           </HBox.margin>
+                        </Button>
                      </children>
                   </HBox>
                </children>
