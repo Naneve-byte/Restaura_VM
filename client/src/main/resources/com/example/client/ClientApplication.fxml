@@ -120,7 +120,7 @@
                                     </MFXButton>
                                  </children>
                               </HBox>
-                              <MFXButton fx:id="btnct" depthLevel="LEVEL5" onAction="#clkcd" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: WHITE; -fx-background-radius: 30;" styleClass="mfx-button8" stylesheets="@../../../value/style.css" text="Order">
+                              <MFXButton depthLevel="LEVEL5" onMouseClicked="#clckrryu" prefHeight="42.0" prefWidth="226.0" style="-fx-background-color: WHITE; -fx-background-radius: 30;" styleClass="mfx-button8" stylesheets="@../../../value/style.css" text="Order">
                                  <VBox.margin>
                                     <Insets top="10.0" />
                                  </VBox.margin>

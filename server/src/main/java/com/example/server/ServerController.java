@@ -1,5 +1,6 @@
 package com.example.server;
 
+import com.example.model.message;
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.control.TableColumn;
@@ -7,7 +8,8 @@ import javafx.scene.input.MouseEvent;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 
-import java.io.IOException;
+import java.io.*;
+import java.net.Socket;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -36,6 +38,7 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Callback;
+import org.slf4j.LoggerFactory;
 
 
 public class ServerController {
@@ -55,10 +58,14 @@ public class ServerController {
     @FXML
     private TableColumn<?, ?> ttlHarga;
     private MainApp firstMessage;
+    private MainApp msg;
+
+
+
 
     @FXML
     private void getAddView(MouseEvent event) {
-//        tableView.getItems().add(firstMessage);
+
 
         try {
             Parent parent = FXMLLoader.load(getClass().getResource("com/example/server/addmenu.fxml"));

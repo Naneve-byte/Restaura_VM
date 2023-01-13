@@ -1,5 +1,6 @@
 package com.example.server;
 
+import com.example.model.message;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.lang.reflect.Type;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketException;
@@ -19,7 +19,7 @@ import java.util.HashSet;
 public class MainApp extends Application {
     private static Stage stg;
     /* Setting up variables */
-    private static final int PORT = 9001;
+    private static final int PORT = 2222;
     /* private static final HashMap<String, User> names = new HashMap<>();*/
     private static HashSet<ObjectOutputStream> writers = new HashSet<>();
     /*private static ArrayList<User> users = new ArrayList<>();*/
@@ -52,7 +52,7 @@ public class MainApp extends Application {
         logger.info("server is running.");
         //launch(args);
         ServerSocket listener = new ServerSocket(PORT);
-        launch(args);
+        //launch(args);
 
         try {
             while (true) {
@@ -88,8 +88,12 @@ public class MainApp extends Application {
                 output = new ObjectOutputStream(os);
 
                 message firstMessage = (message) input.readObject();
-                String da = (String) input.readObject();
-                System.out.println(da);
+
+                System.out.println(firstMessage);
+                System.out.println(firstMessage.getOrder());
+
+
+
 
 
 
@@ -100,6 +104,7 @@ public class MainApp extends Application {
                 logger.error("Exception in run() method for user: " + name, e);
             }
         }
+
     }
 
 }

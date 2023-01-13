@@ -1,5 +1,6 @@
 package com.example.client;
 
+import com.example.model.message;
 import com.jfoenix.controls.JFXComboBox;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -41,13 +42,21 @@ public class    ClientConServer implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        imagePicker.getItems().add("Table 1");
+        String meja2 = imagePicker.getValue();
+        imagePicker.getItems().add("Table pilih");
         for (int i = 0; i < 13; i++) {
             String a = "Table "+i;
             imagePicker.getItems().add(a);
         }
 
     }
+    public void pilih()
+    {
+        String a = imagePicker.getValue();
+
+        System.out.println( "Your Choice " + a);
+    }
+
 
     public void loginButtonAction() throws IOException {
         String hostname = hostnameTextfield.getText();
@@ -60,8 +69,8 @@ public class    ClientConServer implements Initializable {
         Thread x = new Thread(Connect);
         x.start();
         this.scene = new Scene(window);
-        String b = imagePicker.getValue();
-        Connect.send(b);
+
+
     }
     public void showScene() throws IOException {
         Platform.runLater(() -> {
@@ -92,9 +101,7 @@ public class    ClientConServer implements Initializable {
 
     }
 
-    public void pilih(ActionEvent actionEvent) throws IOException {
-        String table = imagePicker.getValue();
-        Connect.send(table);
-    }
+
+
 }
 

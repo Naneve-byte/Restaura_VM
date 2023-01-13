@@ -13,7 +13,7 @@ import java.util.Currency;
 import java.util.Formatter;
 
 
-public class ClientAppitemController  {
+public class ClientAppitemController {
 
     @FXML
     private Label PRICELabel;
@@ -24,6 +24,7 @@ public class ClientAppitemController  {
     @FXML
     private Label nameLabel;
     private Menu menu;
+
     @FXML
     void CLICK(MouseEvent mouseEvent) {
         myListener.onClickListener(menu);
@@ -33,9 +34,9 @@ public class ClientAppitemController  {
     private Listener myListener;
 
 
-    public void setData(Menu menu,Listener myListener,Listener2 myListener2){
+    public void setData(Menu menu, Listener myListener, Listener2 myListener2) {
         this.menu = menu;
-        this.myListener =myListener;
+        this.myListener = myListener;
 
         nameLabel.setText(menu.getName());
         DecimalFormat formatter = new DecimalFormat("#,###.000 ");

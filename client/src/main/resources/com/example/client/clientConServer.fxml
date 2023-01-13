@@ -49,7 +49,7 @@
                   <Image url="@../../../images/MIe-under-the-tree.png" />
                </image>
             </ImageView>
-            <JFXComboBox id="choc" fx:id="imagePicker" onAction="#pilih" promptText="Table" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXComboBox id="choc" fx:id="imagePicker" promptText="Table" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                 </children>
             </GridPane>
         </right>

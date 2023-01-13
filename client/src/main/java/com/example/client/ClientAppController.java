@@ -10,6 +10,7 @@ import javafx.geometry.Insets;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
@@ -18,9 +19,7 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class ClientAppController<MFXButton> implements Initializable {
 
@@ -56,7 +55,10 @@ public class ClientAppController<MFXButton> implements Initializable {
 
 
 
+
     private List<Menu> menus = new ArrayList<>();
+
+
 
 
     private List<Menu> getData() {
@@ -167,8 +169,26 @@ public class ClientAppController<MFXButton> implements Initializable {
         gImg.setPreserveRatio(true);
     }
 
+
+
     @FXML
-    void clkcd(ActionEvent event) {
+    void clckrryu(MouseEvent event) throws IOException {
+       Date timestamp = new Date();
+
+        System.out.println("dawaw "+gNameLable.getText());
+        System.out.println("waktu "+ timestamp);
+
+        Random random = new Random();
+        int randomNumber = random.nextInt(15) + 1;
+
+
+
+        String ORDER = gNameLable.getText();
+        String TotalHarga = gPriceLabel.getText();
+        String Waktu = timestamp.toString();
+        String Pembayaran = "tunai";
+        Connect.send(randomNumber,ORDER,TotalHarga,Waktu,Pembayaran);
+
 
     }
 
@@ -177,8 +197,6 @@ public class ClientAppController<MFXButton> implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-
         opacityPane.setTranslateX(700);
         cartclick21.setOnMouseClicked(mouseEvent -> {
             TranslateTransition slide = new TranslateTransition();

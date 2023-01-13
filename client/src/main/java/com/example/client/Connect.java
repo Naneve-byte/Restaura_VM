@@ -44,15 +44,30 @@ public class Connect implements Runnable{
 
         logger.info("Sockets in and out ready!");
         while (socket.isConnected()){
-            System.out.println("wew");
+            System.out.println("Conected");
+            break;
         }
     }
-    public static void send(String table) throws IOException {
+  /*  public static void send(int meja,String order,String TotalHarga,String waktu,String Pembayaran) throws IOException {
         message createMessage = new message();
-        createMessage.setTable(table);
+        createMessage.setMeja();
+        createMessage.setOrder();
+        createMessage.setTotalHarga();
+        createMessage.setWaktu();
+        createMessage.setPembayaran();
         oos.writeObject(createMessage);
         oos.flush();
+    }*/
+    public static void send(int meja,String order,String TotalHarga,String waktu,String Pembayaran) throws IOException {
+        message createMessage = new message();
+        createMessage.setMeja(meja);
+        createMessage.setOrder(order);
+        createMessage.setTotalHarga(TotalHarga);
+        createMessage.setWaktu(waktu);
+        createMessage.setPembayaran(Pembayaran);        oos.writeObject(createMessage);
+        oos.flush();
     }
+
 
 
 

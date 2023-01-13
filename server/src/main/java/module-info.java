@@ -10,4 +10,6 @@ module com.example.server {
 
     opens com.example.server to javafx.fxml;
     exports com.example.server;
+    exports com.example.model;
+    opens com.example.model to javafx.fxml;
 }
