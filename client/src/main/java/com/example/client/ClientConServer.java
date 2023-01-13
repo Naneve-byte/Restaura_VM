@@ -2,6 +2,7 @@ package com.example.client;
 
 import com.jfoenix.controls.JFXComboBox;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -47,12 +48,7 @@ public class    ClientConServer implements Initializable {
         }
 
     }
-    public void pilih()
-    {
-        String a = imagePicker.getValue();
 
-        System.out.println( "Your Choice " + a);
-    }
     public void loginButtonAction() throws IOException {
         String hostname = hostnameTextfield.getText();
         int port = Integer.parseInt(portTextfield.getText());
@@ -64,6 +60,8 @@ public class    ClientConServer implements Initializable {
         Thread x = new Thread(Connect);
         x.start();
         this.scene = new Scene(window);
+        String b = imagePicker.getValue();
+        Connect.send(b);
     }
     public void showScene() throws IOException {
         Platform.runLater(() -> {
@@ -92,6 +90,11 @@ public class    ClientConServer implements Initializable {
             alert.showAndWait();
         });
 
+    }
+
+    public void pilih(ActionEvent actionEvent) throws IOException {
+        String table = imagePicker.getValue();
+        Connect.send(table);
     }
 }
 

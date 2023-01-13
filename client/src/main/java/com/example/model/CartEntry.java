@@ -4,54 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CartEntry {
-    private List<Menu> menus =new ArrayList<>();
-    private Menu product;
+
     private double totalCost;
-
+    private String name;
+    private String img;
+    private double price;
+    private Menu menuss;
     private int quantity;
-    double price;
-
-    public ShoppingCart() {
-        menus = new ArrayList<>();
-    }
-
-    public void addItem(CartItem item) {
-        items.add(item);
-    }
-
-    public void removeItem(CartItem item) {
-        items.remove(item);
-    }
-
-    public double getTotalCost() {
-        double total = 0;
-        for (CartItem item : items) {
-            total += item.getPrice() * item.getQuantity();
-        }
-        return total;
-    }
 
 
-   /* public CartEntry() {
-        this.menus = new ArrayList<>();
-        this.totalCost = 0;
-    }
-
-
-
-    public Menu getProduct() {
-        return product;
+    public Menu getMenus() {
+        return menuss;
     }
 
     public int getQuantity() {
         return quantity;
     }
-    public void increaseQuantity(){
+
+
+    public CartEntry(Menu menuss, int quantity) {
+        this.menuss = menuss;
+        this.quantity = quantity;
+    }
+
+    public void increaseQuantity() {
         this.quantity++;
     }
-    public void decreaseQuantity(){
-        if(this.quantity>0){
+    public void decreaseQuantity() {
+        if (this.quantity > 0) {
             this.quantity--;
         }
-    }*/
+    }
 }

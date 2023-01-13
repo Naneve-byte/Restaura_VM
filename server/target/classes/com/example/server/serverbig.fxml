@@ -36,7 +36,7 @@
          <center>
             <HBox prefHeight="761.0" prefWidth="894.0" BorderPane.alignment="CENTER">
                <children>
-                  <TableView prefHeight="776.0" prefWidth="733.0">
+                  <TableView prefHeight="776.0" prefWidth="733.0" fx:id="tableView">
                     <columns>
                       <TableColumn fx:id="noMeja" prefWidth="92.0" text="No. Meja" />
                       <TableColumn fx:id="pesanan" prefWidth="288.0" text="Pesanan" />

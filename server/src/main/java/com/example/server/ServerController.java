@@ -50,10 +50,16 @@ public class ServerController {
     private TableColumn<?, ?> pesanan;
 
     @FXML
+    private TableView<?> tableView;
+
+    @FXML
     private TableColumn<?, ?> ttlHarga;
+    private MainApp firstMessage;
 
     @FXML
     private void getAddView(MouseEvent event) {
+//        tableView.getItems().add(firstMessage);
+
         try {
             Parent parent = FXMLLoader.load(getClass().getResource("com/example/server/addmenu.fxml"));
             Scene scene = new Scene(parent);

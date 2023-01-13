@@ -4,16 +4,16 @@ public class Menu {
     private String name;
     private String img;
     private double price;
+    private int quantity;
 
     public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void Menud(String name, double price) {
+        this.name = name;
+        this.price = price;
     }
-
-    private int quantity;
 
     public String getName() {
         return name;

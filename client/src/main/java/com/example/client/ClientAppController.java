@@ -41,6 +41,7 @@ public class ClientAppController<MFXButton> implements Initializable {
 
     private Image image;
     private Listener myListener;
+    private Listener2 myListener2;
     @FXML
     private MFXButton cartclick;
 
@@ -48,6 +49,8 @@ public class ClientAppController<MFXButton> implements Initializable {
     private Label cartclick2;
     @FXML
     private Label cartclick21;
+    @FXML
+    private MFXButton btnct;
 
 
 
@@ -164,6 +167,12 @@ public class ClientAppController<MFXButton> implements Initializable {
         gImg.setPreserveRatio(true);
     }
 
+    @FXML
+    void clkcd(ActionEvent event) {
+
+    }
+
+
 
 
     @Override
@@ -210,6 +219,7 @@ public class ClientAppController<MFXButton> implements Initializable {
                 public void onClickListener(Menu menu) {
                     setChosen(menu);
                 }
+
             };
 
         }
@@ -223,7 +233,7 @@ public class ClientAppController<MFXButton> implements Initializable {
 
                 AnchorPane anchorPane = fxmlloadl.load();
                 ClientAppitemController clientAppitemController = fxmlloadl.getController();
-                clientAppitemController.setData(menus.get(i),myListener);
+                clientAppitemController.setData(menus.get(i),myListener,myListener2);
 
                 if (column == 3) {
                     column=0;

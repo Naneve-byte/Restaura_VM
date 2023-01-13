@@ -29,16 +29,16 @@ public class ClientAppitemController  {
         myListener.onClickListener(menu);
 
     }
+
     private Listener myListener;
 
-    public void setData(Menu menu,Listener myListener){
+
+    public void setData(Menu menu,Listener myListener,Listener2 myListener2){
         this.menu = menu;
         this.myListener =myListener;
+
         nameLabel.setText(menu.getName());
-
         DecimalFormat formatter = new DecimalFormat("#,###.000 ");
-
-
         PRICELabel.setText(main.CURRENCY + formatter.format(menu.getPrice()));
         String imageFile = "images/Shio-Ramen-9487-II.jpg";
         //Image image = new Image(getClass().getResourceAsStream(menu.getImg()));

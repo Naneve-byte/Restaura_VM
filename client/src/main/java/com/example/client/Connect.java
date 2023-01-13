@@ -1,5 +1,6 @@
 package com.example.client;
 
+import com.example.model.message;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,11 +35,23 @@ public class Connect implements Runnable{
             oos = new ObjectOutputStream(outputStream);
             is = socket.getInputStream();
             input = new ObjectInputStream(is);
+
         } catch (IOException e) {
             ClientConServer.getInstance().showErrorDialog("Could not connect to server");
             logger.error("Could not Connect");
         }
         logger.info("Connection accepted " + socket.getInetAddress() + ":" + socket.getPort());
+
+        logger.info("Sockets in and out ready!");
+        while (socket.isConnected()){
+            System.out.println("wew");
+        }
+    }
+    public static void send(String table) throws IOException {
+        message createMessage = new message();
+        createMessage.setTable(table);
+        oos.writeObject(createMessage);
+        oos.flush();
     }
 
 

@@ -87,7 +87,11 @@ public class MainApp extends Application {
                 os = socket.getOutputStream();
                 output = new ObjectOutputStream(os);
 
-                Type firstMessage = (Type) input.readObject();
+                message firstMessage = (message) input.readObject();
+                String da = (String) input.readObject();
+                System.out.println(da);
+
+
 
                 writers.add(output);
             } catch (SocketException socketException) {
